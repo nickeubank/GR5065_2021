@@ -12,7 +12,7 @@ editor_options:
 ---
 
 ```{r, setup, include = FALSE}
-set.seed(20210209)
+#set.seed(20210209)
 ```
 
 # Equilibrium Climate Sensitivity
@@ -66,7 +66,7 @@ based only on your two face-down cards and the other bets.
 ```{r}
 ECS <- -rnorm(10^6, mean =  3.7, sd = 0.2 * 3.7) / 
         rnorm(10^6, mean = -1.6, sd = 0.5 * 1.6)
-range(ECS)
+summary(ECS)
 ```
 
 ## Truncating the prior
